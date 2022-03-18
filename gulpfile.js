@@ -1,8 +1,7 @@
 const gulp = require('gulp');
+const paths = require('path');
 
-const serve = require('./gulp/tasks/serve')
-const pug2html = require('./gulp/tasks/pug2html');
-const html2html = require('./gulp/tasks/html2html');
+const serve = require('./gulp/tasks/serve');
 const twig2html = require('./gulp/tasks/twig2html');
 const styles = require('./gulp/tasks/styles');
 const script = require('./gulp/tasks/script');
@@ -23,4 +22,4 @@ const dev = gulp.parallel(twig2html, styles, script, fonts, imagemin, favicon);
 
 const build = gulp.series(clean, dependenciesJS, dependenciesCss, dev);
 
-module.exports.start = gulp.series(build, serve)
+module.exports.start = gulp.series(build, serve);
