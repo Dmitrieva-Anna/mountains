@@ -1,0 +1,35 @@
+.mobile-navigation
+	&__shadow
+		background-color: #0000004d
+		position: fixed
+		z-index: 100
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		pointer-events: none
+		opacity: 0
+		transition: opacity .2s linear
+		&.active
+			opacity: 1
+			pointer-events: auto
+
+	&__menu
+		top: 80px
+		left: auto
+		right: 0
+		bottom: 0
+		position: fixed
+		z-index: 1001
+		padding: 24px
+		transition: transform .2s linear, opacity .2s linear
+		transform: translate3d(0, 100%, 0)
+		opacity: 0
+		pointer-events: none
+		background-color: var(--background-main)
+		width: 100%
+		max-width: 300px
+		&.active
+			transform: translate3d(0, 0, 0)
+			opacity: 1
+			pointer-events: auto

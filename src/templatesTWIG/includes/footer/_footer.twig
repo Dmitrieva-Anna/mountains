@@ -1,0 +1,37 @@
+{% set linksFirst =
+	[
+		'About MNTN',
+		'Contributors & Writers',
+		'Write For Us',
+		'Contact Us',
+		'Privacy Policy'
+	]
+%}
+{% set linksSecond =
+	[
+		'The Team',
+		'Jobs',
+		'Press'
+	]
+%}
+<footer class="footer">
+	<div class="footer-inner container">
+		<ul class="footer-logo">
+			<li class="footer-logo__copy">
+				<a href="javascript:;" class="link--logo">Mntn</a>
+				<div class="text">Get out there & discover your next slope, mountain & destination!</div>
+			</li>
+			<li class="text text--copyright">Copyright 2019 MNTN, Inc. Terms & Privacy</li>
+		</ul>
+		<div class="footer-list">
+			<div class="footer-list__item">
+				<a href="javascript:;" class="link link--accent">More on The Blog</a>
+				{% include '../footer/_footerLinkFirst.twig'%}
+			</div>
+			<div class="footer-list__item">
+				<a href="javascript:;" class="link link--accent">More on MNTN</a>
+				{% include '../footer/_footerLinkSecond.twig'%}
+			</div>
+		</div>
+	</div>
+</footer>

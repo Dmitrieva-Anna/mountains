@@ -1,0 +1,35 @@
+@import "typography"
+@import "variables"
+@import "helpers"
+
+*
+	box-sizing: border-box
+
+	&:before
+		box-sizing: border-box
+
+	&:after
+		box-sizing: border-box
+
+	&:focus
+		outline: none !important
+
+body, html
+	margin: 0
+	padding: 0
+	width: 100%
+	min-height: 100vh
+	font-family: Bentham, sans-serif
+	scroll-behavior: smooth
+	background-color: var(--background-main)
+
+
+@import "includes/parallax/parallax"
+//@import "includes/parallax/parallax.backup"
+@import "includes/header/header"
+@import "includes/navigation/navigation"
+@import "includes/top/top"
+@import "includes/content/content"
+@import "includes/content/contentItem"
+@import "includes/footer/footer"
+@import "includes/mobileMenu/mobileMenu"

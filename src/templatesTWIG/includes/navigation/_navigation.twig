@@ -1,0 +1,12 @@
+{% set navigationItems = [
+	'Equipment',
+	'About us',
+	'Blog',
+]
+%}
+
+<nav class="navigation {{ navigationModifier }}">
+	{% for item in navigationItems %}
+		<a href="javascript:;" class="link link--navigation">{{ item }}</a>
+	{% endfor %}
+</nav>

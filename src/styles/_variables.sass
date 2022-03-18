@@ -1,0 +1,22 @@
+$path-image: '/img/'
+$path-image-template: $path-image + 'template/'
+
+\:root
+	--top-background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%)
+	--bottom-background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%)
+	--background-main: #0B1D26
+	--accent: #FBD784
+	--white: #FFFFFF
+	--black: black
+
+
+
+	--max-width: 1462px
+	--max-width-actual: calc(var(--max-width) + ((var(--spacer) * 3) * 2))
+
+	// default
+	--spacer: 8px
+
+	@media screen and (max-width: 1024px)
+		--spacer: 6px
+

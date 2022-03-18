@@ -1,0 +1,168 @@
+\:root
+	--title-color: var(--white)
+	--subtitle-color: var(--white)
+	--text-color: var(--white)
+	--link-color: var(--accent)
+	--linkHover-color: var(--black)
+	--tagline-color: var(--accent)
+	--lineHeightMod: 8px
+
+.title
+	font-size: calc(var(--spacer) * 10)
+	font-style: normal
+	font-weight: 600
+	line-height: calc(var(--spacer) * 12 + var(--lineHeightMod))
+	text-align: left
+	color: var(--title-color)
+	&--card
+		font-size: calc(var(--spacer) * 8)
+		line-height: calc(var(--spacer) * 8 + var(--lineHeightMod))
+
+	@media only screen and (max-width: 425px)
+		font-size: calc(var(--spacer) * 7)
+		line-height: calc(var(--spacer) * 7 + var(--lineHeightMod))
+
+.subtitle
+	font-size: calc(var(--spacer) * 8)
+	font-style: normal
+	font-weight: 600
+	line-height: calc(var(--spacer) * 8 + var(--lineHeightMod))
+	text-align: left
+	color: var(--subtitle-color)
+
+.text
+	font-size: calc(var(--spacer) * 2)
+	font-style: normal
+	font-weight: 700
+	line-height: calc(var(--spacer) * 2 + var(--lineHeightMod))
+	text-align: left
+	color: var(--text-color)
+
+	&--copyright
+		font-weight: 500
+		opacity: 0.5
+
+
+a, .link
+	font-size: calc(var(--spacer) * 2)
+	line-height: calc(var(--spacer) * 2 + var(--lineHeightMod))
+	text-align: left
+	color: var(--link-color)
+	text-decoration: none
+	cursor: pointer
+
+	&:hover
+		color: var(--linkHover-color)
+
+	&--social
+		writing-mode: vertical-rl
+		text-orientation: mixed
+		//width: 77px
+	&--panel-menu
+		color: var(--text-color)
+
+
+	&--navigation, &--social
+		font-size: calc(var(--spacer) * 2)
+		font-style: normal
+		font-weight: 700
+		line-height: calc(var(--spacer) * 2 + var(--lineHeightMod))
+		text-align: left
+		color: var(--text-color)
+
+	&--description
+		display: flex
+		align-items: center
+		column-gap: calc(var(--spacer) * 2)
+		&:hover
+			color: var(--text-color)
+			fill: var(--text-color)
+			stroke: var(--text-color)
+
+	&--logo
+		text-transform: uppercase
+		color: var(--text-color)
+		font-size: calc(var(--spacer) * 4)
+		line-height: calc(var(--spacer) * 4 + var(--lineHeightMod))
+		letter-spacing: 0.01em
+
+	&--footer
+		color: var(--text-color)
+		&:hover
+			color: var(--link-color)
+
+	&--accent
+		font-size: calc(var(--spacer) * 3)
+		line-height: calc(var(--spacer) * 3 + var(--lineHeightMod))
+
+	&--slide
+		color: var(--text-color)
+		&:hover
+			color: var(--link-color)
+		position: relative
+		width: 40px
+		height: 40px
+		text-align: center
+		line-height: 47px
+		background: transparent
+		//border-radius: 50%
+		transition: .5s
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			//border-radius: 50%
+			opacity: 0
+			border-top-width: 1px
+			border-bottom-width: 1px
+			border-top-style: solid
+			border-bottom-style: solid
+			border-top-color: #FBD784
+			border-bottom-color: #FBD784
+			background: transparent
+			transition: .5s
+			transform: scale(.9)
+			z-index: -1
+
+		&:hover::before
+			opacity: 1
+			transform: scale(1.1)
+
+	&--scroll
+		color: var(--text-color)
+		display: inline-flex
+		&:hover
+			color: var(--link-color)
+
+
+.tagline
+	font-size: calc(var(--spacer) * 2)
+	font-style: normal
+	font-weight: 800
+	line-height: calc(var(--spacer) * 2 + var(--lineHeightMod))
+	letter-spacing: 6px
+	text-align: left
+	color: var(--tagline-color)
+	display: flex
+	align-items: center
+	column-gap: calc(var(--spacer) * 4)
+	position: relative
+
+	&::before
+		display: block
+		content: ''
+		background: var(--tagline-color)
+		height: 1px
+		width: 72px
+
+
+.number
+	font-size: calc(var(--spacer) * 30)
+	font-style: normal
+	font-weight: 700
+	line-height: calc(var(--spacer) * 30)
+	color: var(--text-color)
+	opacity: 0.1

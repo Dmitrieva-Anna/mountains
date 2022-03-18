@@ -1,0 +1,50 @@
+.footer
+	background: var(--background-main)
+	padding:
+		top: 200px
+		bottom: 120px
+	position: relative
+	z-index: 6
+
+.footer-inner
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	@media only screen and (max-width: 1024px)
+		column-gap: calc(var(--spacer) * 3)
+	@media only screen and (max-width: 880px)
+		flex-direction: column-reverse
+		row-gap: calc(var(--spacer) * 5)
+
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+.footer-logo
+	padding: 0
+	margin: 0
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+	&__copy
+		display: flex
+		flex-direction: column
+		row-gap: calc(var(--spacer) * 3)
+
+.footer-list
+	display: flex
+	width: 100%
+	justify-content: flex-end
+	column-gap: calc(var(--spacer) * 26)
+	@media only screen and (max-width: 880px)
+		justify-content: space-around
+	@media only screen and (max-width: 475px)
+		column-gap: calc(var(--spacer) * 4)
+
+	&__item
+		display: flex
+		flex-direction: column
+		row-gap: calc(var(--spacer) * 3)

@@ -1,0 +1,11 @@
+.navigation
+	display: flex
+	column-gap: calc(var(--spacer) * 5)
+	@media only screen and (max-width: 578px)
+		display: none
+
+	&--mobileMenu
+		@media only screen and (max-width: 578px)
+			display: flex
+			flex-direction: column
+			align-items: center

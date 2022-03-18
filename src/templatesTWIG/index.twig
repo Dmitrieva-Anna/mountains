@@ -1,0 +1,59 @@
+{% extends "common/_base.twig" %}
+
+{% block content %}
+{#<section class="wrapper">#}
+
+	{# bckground #}
+	<div class="parallax js-parallax">
+{#		<div class="bc"></div>#}
+		<div class="top-content" id="start">
+		{% include './includes/header/_header.twig' %}
+		{% include './includes/top/_top.twig' %}
+		</div>
+
+		<div class="parallax__item parallax__item--clouds">
+			<img src="img/template/clouds.png" alt="">
+		</div>
+		<div class="parallax__item parallax__item--mountains">
+			<img src="img/template/mountains.png" alt="">
+		</div>
+		<div class="parallax__item parallax__item--grass">
+			<img src="img/template/grass.png" alt="">
+		</div>
+		<div class="bc-clouds"></div>
+		<div class="small-clouds"></div>
+		{% include './includes/content/_content.twig' %}
+		{% include './includes/footer/_footer.twig' %}
+	</div>
+
+	<div class="top-slide">
+		<div class="top-slide__number">
+			<a class="link link--slide" href="#start">Start</a>
+			<a class="link link--slide" href="#card1">01</a>
+			<a class="link link--slide" href="#card2">02</a>
+			<a class="link link--slide" href="#card3">03</a>
+		</div>
+		<div class="top-slide__bar"></div>
+	</div>
+
+	<div class="panel-menu hide">
+		<div class="header-logo">
+			<a href="javascript:;" class="link--logo">Mntn</a>
+		</div>
+		{% include './includes/navigation/_navigation.twig' with {
+			navigationModifier: 'navigation--panel'
+		} %}
+		<div class="social social--panel">
+			<a href="javascript:;" class="link--panel-menu">Follow us</a>
+			<div class="social__img">
+				<img src="./img/template/instagram.svg" alt="Instagram">
+			</div>
+			<div class="social__img">
+				<img src="./img/template/twitter.svg" alt="Twitter">
+			</div>
+		</div>
+	</div>
+	{% include './includes/mobileMenu/_mobileMenu.twig' %}
+	{# content	#}
+
+{% endblock %}

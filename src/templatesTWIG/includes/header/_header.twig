@@ -1,0 +1,29 @@
+<header class="header">
+	<div class="header-inner">
+			<div class="header-logo">
+				<a href="javascript:;" class="link--logo">Mntn</a>
+			</div>
+			{% include '../navigation/_navigation.twig' with {
+				navigationItems: navigationItems,
+			} %}
+			{#<div class="burger-menu">
+				<span class="burger-menu__line"></span>
+			</div>#}
+			<div class="burger-menu-two js-menuTrigger">
+				<div class="burger-menu-two__line"></div>
+				<div class="burger-menu-two__line"></div>
+				<div class="burger-menu-two__line"></div>
+				<div class="burger-menu-two__line"></div>
+			</div>
+
+			<div class="header-account">
+				<img src="./img/template/account.svg" alt="Account">
+				<div class="text">Account</div>
+				<div class="social social--header">
+					<img src="./img/template/instagram.svg" alt="Instagram">
+					<img src="./img/template/twitter.svg" alt="Twitter">
+				</div>
+			</div>
+
+	</div>
+</header>
