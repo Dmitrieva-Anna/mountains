@@ -12,6 +12,12 @@ const dependenciesCss = require('./gulp/tasks/dependenciesCSS');
 const fonts = require('./gulp/tasks/fonts');
 const clean = require('./gulp/tasks/clean');
 const favicon = require('./gulp/tasks/favicons');
+const ghPages = require('gh-pages');
+
+function deploy(cb) {
+    ghPages.publish(paths.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 const dev = gulp.parallel(twig2html, styles, script, fonts, imagemin, favicon);
 
