@@ -51,7 +51,7 @@ a, .link
 	cursor: pointer
 
 	&:hover
-		color: var(--linkHover-color)
+		color: var(--link-color)
 
 	&--social
 		writing-mode: vertical-rl
@@ -94,15 +94,18 @@ a, .link
 
 	&--slide
 		color: var(--text-color)
+		position: relative
+		width: 40px
+		height: 40px
+		text-align: center
+		line-height: 47px
+		background: transparent
+		cursor: pointer
+		transition: .5s
+
 		&:hover
 			color: var(--link-color)
-			position: relative
-			width: 40px
-			height: 40px
-			text-align: center
-			line-height: 47px
-			background: transparent
-			transition: .5s
+
 		&:before
 			content: ''
 			position: absolute
