@@ -3,7 +3,6 @@
 	align-items: center
 	width: 100%
 
-
 .header-inner
 	flex-direction: row
 	display: flex
@@ -17,55 +16,18 @@
 	@media only screen and (max-width: 578px)
 		display: none
 
-//.burger-menu
-//	display: none
-//
-//	@media only screen and (max-width: 578px)
-//		display: flex
-//		align-items: center
-//		justify-content: center
-//		flex-direction: column
-//		position: relative
-//		cursor: pointer
-//		width: 30px
-//		height: 30px
-//		&:before
-//			content: ''
-//			position: absolute
-//			display: block
-//			width: 30px
-//			height: 2px
-//			top: 2px
-//			background-color: var(--white)
-//			margin-bottom: var(--spacer)
-//
-//		&:after
-//			content: ''
-//			position: absolute
-//			display: block
-//			top: 20px
-//			width: 30px
-//			height: 2px
-//			background-color: var(--white)
-//		&__line
-//			display: block
-//			width: 30px
-//			height: 2px
-//			background-color: var(--white)
-//			margin-bottom: var(--spacer)
-
 .burger-menu-two
 	display: none
 
 	@media only screen and (max-width: 578px)
 		margin:
-			top: 12px
-			bottom: 12px
+		top: 12px
+		bottom: 12px
 		display: block
 		width: 30px
 		height: 30px
 		position: relative
-		cursor:	pointer
+		cursor: 	pointer
 
 		&__line
 			position: absolute
@@ -109,35 +71,6 @@
 				&:nth-child(4)
 					opacity: 0
 					transform: translate3d(0, 20px, 0)
-
-//.change
-//	&:before
-//		transform: rotate(45deg)
-//		top: 11px
-//	//bottom: 6px
-//
-//	&:after
-//		transform: rotate(-45deg)
-//		width: 100%
-//		top: 12px
-//
-//	.burger-menu__line
-//		transform: scale(0)
-
-
-//.panel-info
-//	top: 0
-//	left: 0
-//	right: 0
-//	width: 100%
-//	justify-content: space-around
-//	background: red
-//	transform: translate3d(0, 0, 0)
-//	z-index: 3
-//	transition: transform .2s linear
-//	padding: 0 calc(var(--spacer) * 10)
-//&.hide
-//	transform: translate3d(0, -100%, 0)
 
 .panel-menu
 	position: fixed
