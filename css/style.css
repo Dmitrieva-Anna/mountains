@@ -87,16 +87,16 @@ a, .link {
     font-size: calc(var(--spacer) * 3);
     line-height: calc(var(--spacer) * 3 + var(--lineHeightMod)); }
   a--slide, .link--slide {
-    color: var(--text-color);
-    position: relative;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 47px;
-    background: transparent;
-    transition: .5s; }
+    color: var(--text-color); }
     a--slide:hover, .link--slide:hover {
-      color: var(--link-color); }
+      color: var(--link-color);
+      position: relative;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 47px;
+      background: transparent;
+      transition: .5s; }
     a--slide:before, .link--slide:before {
       content: '';
       position: absolute;
@@ -212,7 +212,7 @@ body, html {
   flex-direction: column; }
 
 .parallax {
-  perspective: 55px;
+  perspective: 60px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -345,8 +345,8 @@ body, html {
   display: none; }
   @media only screen and (max-width: 578px) {
     .burger-menu-two {
-      margin-top: 12px;
-      margin-bottom: 12px;
+      top: 12px;
+      bottom: 12px;
       display: block;
       width: 30px;
       height: 30px;
@@ -508,7 +508,7 @@ body, html {
   --content-top: 240px;
   position: relative;
   z-index: 5;
-  margin-top: var(--content-top); }
+  top: var(--content-top); }
   .content:before {
     content: '';
     background: var(--bottom-background);
@@ -604,8 +604,8 @@ body, html {
 
 .footer {
   background: var(--background-main);
-  padding-top: 200px;
-  padding-bottom: 120px;
+  top: 200px;
+  bottom: 120px;
   position: relative;
   z-index: 6; }
 
